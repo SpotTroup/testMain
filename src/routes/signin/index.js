@@ -48,9 +48,9 @@ import SignIn from '../../components/signin/index.js';
 
 const SignInPage = () => (
 	<div class="bg-fixed" style="background-image: url('../../assets/background/bg-ocean.png')" >
-		<Header/>
+		
 		<SignIn />
-		<Footer />
+		
 		
 	</div>
 

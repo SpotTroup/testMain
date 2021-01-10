@@ -48,7 +48,7 @@ import BrowserDetails from '../../components/browserdetails/index.js';
 const Shop = () => (
 
 	<div class="bg-fixed " style="background-image: url('../../assets/background/bg-shop.png')">
-		<Header />
+		
 		<div class="carousel relative container mx-auto">
 			<div class="carousel-inner relative overflow-hidden w-full"></div>
 

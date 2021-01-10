@@ -39,7 +39,7 @@ import './style.css';
 
 const HistoryLoader = () => (
 
-    <div class="container bg-gray-400 rounded-xl overflow-hidden shadow-xl border-black opacity-95 ">
+    <div class="container bg-gray-400 rounded-xl overflow-hidden shadow-xl border-black opacity-95 mb-2">
         <div class="card shadow-2xl">
             <div class="col-span-1 flex justify-between ">
                 <div class="ml-3 p-3">

@@ -49,54 +49,160 @@ import './style.css';
 
 
 const Footer = () => (
-  <footer class="col-span-1 bg-gray-800 opacity-60 text-gray-800 rounded-top">
-    <div class="flex flex-wrap mb-4 w-full opacity-100 ">
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 ">
-        <h3 class="text-3xl py-4">About Us</h3>
-        <p>SpotTroup in Kiel gegründet. Am Meer lebend. Für die Stadt entwickelt.
-          </p>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 pl-8">
-        <h3 class="text-3xl py-4">Production</h3>
-        <ul>
-          <li><a href="#">Box</a></li>
-          <li><a href="#">Badge</a></li>
-          <li><a href="#">Base</a></li>
-          <li><a href="#">Filament</a></li>
-          <li><a href="#">Catamaran</a></li>
-        </ul>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 ">
-        <h3 class="text-3xl py-4">Future</h3>
-        <ul>
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Vision</a></li>
-          <li><a href="#">Milestones</a></li>
-          <li><a href="#">Codex</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 ">
-        <h3 class="text-3xl py-4">Company</h3>
-        <ul>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Impressum</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Olice</a></li>
-          <li><svg class=" svgbtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg><a href="#">Contact</a></li>
-        </ul>
-      </div>
+  <div class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+ 
 
 
-      <div class="bg-blue-900 p-2 pl-6">
-        <p class="bottom">© Copyright 2020 - spottroup.com</p>
+
+<footer class="bg-gray-800 sm:mt-10 pt-10">
+  <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+      
+      <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+              Getting Started
+          </div>
+
+          
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Installation
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Release Notes
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Upgrade Guide
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Using with Preprocessors
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Optimizing for Production
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Browser Support
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              IntelliSense
+          </a>
+      </div>
+
+      
+      <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+              Core Concepts
+          </div>
+
+         
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Utility-First
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Responsive Design
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Hover, Focus, & Other States
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Dark Mode
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Adding Base Styles
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Extracting Components
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Adding New Utilities
+          </a>
+      </div>
+
+      
+      <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
         
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+              Customization
+          </div>
+
+          
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Configuration
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Theme Configuration
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Breakpoints
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Customizing Colors
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Customizing Spacing
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Configuring Variants
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Plugins
+          </a>
       </div>
-      <SizeControll />
-    </div>
-  </footer>
+
+      
+      <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+         
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+              Community
+          </div>
+
+         
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              GitHub
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Discord
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              Twitter
+          </a>
+          <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+              YouTube
+          </a>
+      </div>
+  </div>
+
+  
+  <div class="pt-2">
+      <div class="flex pb-5 px-3 m-auto pt-5 
+          border-t border-gray-500 text-gray-400 text-sm 
+          flex-col md:flex-row max-w-6xl">
+          <div class="mt-2">
+              © Copyright 1998-year. All Rights Reserved.
+          </div>
+
+          
+          <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+              <a href="#" class="w-6 mx-1">
+                  <i class="uil uil-facebook-f"></i>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <i class="uil uil-twitter-alt"></i>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <i class="uil uil-youtube"></i>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <i class="uil uil-linkedin"></i>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <i class="uil uil-instagram"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+</footer>
+</div>
 );
 
 export default Footer;

@@ -48,10 +48,10 @@ import LogIn from '../../components/login/index.js';
 
 const LogInPage = () => (
 	<div class="bg-fixed" style="background-image: url('../../assets/background/bg-ocean.png')" >
-		<Header/>
-		<LogIn />
-		<Footer />
-		
+		<div class="mt-10">
+			
+			<LogIn/>
+		</div>
 	</div>
 
 );

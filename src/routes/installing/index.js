@@ -42,14 +42,17 @@ import MapNavigationCard from '../../components/mapnavigationcard/index.js';
 
 import HistoryLoader from '../../components/historyloader/index.js';
 import BrowserDetails from '../../components/browserdetails/index.js';
-
+import Install from '../../components/installing';
 
 const Installing = () => (
-	<div >
-		<MapNavigationCard />
-		<HistoryLoader />
-		
-		
+	<div class="bg-fixed" style="background-image: url('../../assets/background/bg-ocean.png')" >
+		<div class="mt-10">
+			<MapNavigationCard />
+		</div>
+		<div>
+			<Install />
+		</div>
+
 	</div>
 
 );

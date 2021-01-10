@@ -47,10 +47,10 @@ import BrowserDetails from '../../components/browserdetails/index.js';
 
 const Setting = () => (
 	<div class="bg-fixed" style="background-image: url('../../assets/background/bg-ocean.png')" >
-		<Header/>
+		
 		<MapNavigationCard />
 		<HistoryLoader />
-		<Footer />
+		
 		
 	</div>
 

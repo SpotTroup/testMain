@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@emmetio/abbreviation": "^2.2.0",
+    "@iconscout/unicons": "^3.0.6",
     "@preact/prerender-data-provider": "^3.0.1",
     "@react-google-maps/api": "^2.0.2",
     "axios": "^0.21.1",

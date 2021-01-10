@@ -58,6 +58,7 @@ import Installing from '../routes/installing';
 import Setting from '../routes/setting';
 import LogInPage from '../routes/loginpage';
 import SignIn from '../routes/signin';
+import Activating from '../routes/activating';
 
 
 // Settings
@@ -74,26 +75,24 @@ export default class App extends Component {
 
 	render(props) {
 		return (
-			<Provider value={props} >
 
-			
+			<Provider value={props} >
+				<Header />
+				<Router onChange={this.handleRoute}>
+					<Home path="/" />
+					<Fishing path="/fishing" />
+					<Cleaner path="/cleaner" />
+					<Shop path="/shop" />
+					<Production path="/production" />
+					<Parking path="/parking" />
+					<Profile path="/profile" />
+					<Booking path="/booking" />
+					<Installing path="/installing" />
+					<Setting path="/setting" />
+					<LogInPage path="/loginpage" />
+					<SignIn path="/signin" />
 					
-					<div class="flex-grow"><Router onChange={this.handleRoute}>
-						<Home path="/"/>
-						<Fishing path="/fishing" />
-						<Cleaner path="/cleaner" />
-						<Shop path="/shop" />
-						<Production path="/production" />
-						<Parking path="/parking" />
-						<Profile path="/profile" />
-						<Booking path="/booking" />
-						<Installing path="/installing" />
-						<Setting path="/setting"/>
-						<LogInPage path="/loginpage"/>
-						<SignIn path="/signin"/>
-					</Router></div>
-					
-			
+				</Router>
 
 			</Provider>
 		);

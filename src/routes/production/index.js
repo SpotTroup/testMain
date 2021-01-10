@@ -47,10 +47,9 @@ import BrowserDetails from '../../components/browserdetails/index.js';
 
 const Production = () => (
 	<div class="bg-fixed" style="background-image: url('../../assets/background/bg-ocean.png')" >
-		<Header/>
+		
 		<MapNavigationCard />
 		<HistoryLoader />
-		<Footer />
 		
 	</div>
 );
