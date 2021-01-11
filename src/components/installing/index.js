@@ -47,7 +47,7 @@ const Installing = () => {
                 <p>Chat</p>
             </div>
             <div class="">
-                <div class="card btn mx-auto w-24 flex justify-items-center"><a href="../../routes/installing/activating">Activate</a></div>
+                <div class="card btn mx-auto w-24 flex justify-items-center"><a href="/activating">Activate</a></div>
             </div>
         </div>
 
