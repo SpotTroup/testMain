@@ -58,11 +58,12 @@ const Header = () => {
 
 	return (
 
-		<div class="bg-gray-600  ">
+		<div class="bg-gray-400  " style={{height:'150px'}}>
 			<nav
+			style={{height:'150px'}}
 				class="flex items-center justify-between flex-wrap rounded-2xl bg-gray-600 p-6 fixed w-full z-10 pin-t"
 			>
-				<div class="my-2 pr-2 w-5/12 lg:w-3/12 overflow-hidden">
+				<div class="my-2 pr-2 w-5/12 lg:w-3/12 overflow-hidden" style={{height:'50px'}}>
 					<div class="flex  justify-center ml-4 lg:ml-0">
 						<a href="/">
 							<img class="md:pl-6" src="../../assets/icons/apple-icon-76x76.png" />
@@ -70,7 +71,7 @@ const Header = () => {
 					</div>
 				</div>
 
-				<div class="flex items-center flex-no-shrink text-white mr-6">
+				<div style={{height:'50px'}} class="flex items-center flex-no-shrink text-white mr-6">
 					<a
 						class="text-white no-underline hover:font-extrabold hover:no-underline"
 						href="#"
@@ -81,7 +82,7 @@ const Header = () => {
 					</a>
 				</div>
 
-				<div class="block lg:hidden">
+				<div style={{height:'50px'}} class="block lg:hidden">
 					<button
 						id="nav-toggle"
 						class="flex items-center px-3 py-2 border rounded text-grey border-grey-dark hover:text-black hover:border-black" onClick={Click}
@@ -97,7 +98,7 @@ const Header = () => {
 					</button>
 				</div>
 
-				<div
+				<div style={{height:'50px'}}
 					class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
 					id="nav-content"
 				>
