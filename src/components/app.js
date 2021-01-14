@@ -59,7 +59,7 @@ import Setting from '../routes/setting';
 import LogInPage from '../routes/loginpage';
 import SignIn from '../routes/signin';
 import Activating from '../routes/activating';
-
+import QRScan from './qrcode'
 
 // Settings
 import Profile from '../routes/profile';
@@ -86,11 +86,13 @@ export default class App extends Component {
 					<Production path="/production" />
 					<Parking path="/parking" />
 					<Profile path="/profile" />
-					<Booking path="/booking" />
+					<Booking path="/booking/" user="me" />
+					<Booking path="/booking/:user"  />
 					<Installing path="/installing" />
 					<Setting path="/setting" />
 					<LogInPage path="/loginpage" />
 					<SignIn path="/signin" />
+					<QRScan path='/qrscan'/>
 					
 				</Router>
 

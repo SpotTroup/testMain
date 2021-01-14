@@ -40,7 +40,10 @@
 */
 
 //=========================================================================================
+import { useEffect, useState } from "preact/hooks";
+import React, { useReducer } from 'react';
 
+import axios from 'axios';
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import SizeControll from '../../components/sizecontroll/index.js';
@@ -50,20 +53,66 @@ import './style.css';
 
 
 const Header = () => {
-
+	const [isLoggedIn, setLoggedin] = useState(false);
+	let button;
+	if (isLoggedIn) {
+		button = <LogoutButton onClick={handleLogoutClick} />;
+	} else {
+		button = <LoginButton />;
+	}
 	const Click = () => {
 		document.getElementById("nav-content").classList.toggle("hidden");
 	};
+	useEffect(() => {
 
+		let comments = localStorage.getItem('JWT_TOKEN');
+		console.log(comments);
+		if (comments) {
+			setLoggedin(true);
+		} else {
+			setLoggedin(false);
+		}
+	}, []);
+	const handleLogoutClick = () => {
+		localStorage.removeItem("JWT_TOKEN")
+		this.setState({ isLoggedIn: false });
+	}
 
+	function LoginButton(props) {
+		return (<div>
+			<li class="mr-3">
+				<a
+					class="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4"
+					href="/loginpage"
+				>LogIn</a>
+			</li>
+			<li class="mr-3">
+				<a
+					class="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4"
+					href="/signin"
+				>SignIn</a>
+			</li>
+		</div>
+		);
+	}
+
+	function LogoutButton(props) {
+		return (
+			<li class="mr-3">
+				<button class="btn border-black text-white hover:text-gray-200 hover:bg-gray-700" type='button' >
+					Logout
+      </button>
+			</li>
+		);
+	}
 	return (
 
-		<div class="bg-gray-400  " style={{height:'150px'}}>
+		<div class="bg-gray-400  " style={{ height: '150px' }}>
 			<nav
-			style={{height:'150px'}}
+				style={{ height: '150px' }}
 				class="flex items-center justify-between flex-wrap rounded-2xl bg-gray-600 p-6 fixed w-full z-10 pin-t"
 			>
-				<div class="my-2 pr-2 w-5/12 lg:w-3/12 overflow-hidden" style={{height:'50px'}}>
+				<div class="my-2 pr-2 w-5/12 lg:w-3/12 overflow-hidden" style={{ height: '50px' }}>
 					<div class="flex  justify-center ml-4 lg:ml-0">
 						<a href="/">
 							<img class="md:pl-6" src="../../assets/icons/apple-icon-76x76.png" />
@@ -71,7 +120,7 @@ const Header = () => {
 					</div>
 				</div>
 
-				<div style={{height:'50px'}} class="flex items-center flex-no-shrink text-white mr-6">
+				<div style={{ height: '50px' }} class="flex items-center flex-no-shrink text-white mr-6">
 					<a
 						class="text-white no-underline hover:font-extrabold hover:no-underline"
 						href="#"
@@ -82,7 +131,7 @@ const Header = () => {
 					</a>
 				</div>
 
-				<div style={{height:'50px'}} class="block lg:hidden">
+				<div style={{ height: '50px' }} class="block lg:hidden">
 					<button
 						id="nav-toggle"
 						class="flex items-center px-3 py-2 border rounded text-grey border-grey-dark hover:text-black hover:border-black" onClick={Click}
@@ -98,7 +147,7 @@ const Header = () => {
 					</button>
 				</div>
 
-				<div style={{height:'50px'}}
+				<div style={{ height: '50px' }}
 					class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
 					id="nav-content"
 				>
@@ -146,18 +195,8 @@ const Header = () => {
 								href="/installing"
 							>Installing</a>
 						</li>
-						<li class="mr-3">
-							<a
-								class="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4"
-								href="/loginpage"
-							>LogIn</a>
-						</li>
-						<li class="mr-3">
-							<a
-								class="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4"
-								href="/signin"
-							>SignIn</a>
-						</li>
+						{button}
+
 					</ul>
 				</div>
 			</nav>

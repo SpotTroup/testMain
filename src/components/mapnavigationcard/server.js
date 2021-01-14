@@ -277,7 +277,7 @@ export class Server extends Component {
                         <h4>{this.state.selectedPlace.name}</h4>
 
 
-                        <a href={'/profile/' + this.state.selectedplaceid}>Book this parking space</a>
+                        <a href={'/booking/' + this.state.selectedplaceid}>Book this parking space</a>
                     </div>
                 </InfoWindow>
 
