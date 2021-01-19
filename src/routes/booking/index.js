@@ -60,7 +60,7 @@ const Booking = ({ user }) => {
   
 	const handleSubmit = event => {
 	  event.preventDefault();
-	  setSubmitting(true);
+	  
 	  
   axios({
     method: 'post',
@@ -79,7 +79,7 @@ const Booking = ({ user }) => {
         console.log(response);
     });
 	  setTimeout(() => {
-		setSubmitting(false);
+		
 	  }, 3000);
 	}
   
